@@ -20,3 +20,22 @@ endmodule
 The RTL was simulated using a testbench that verified all 8 input combinations. Waveform and print outputs confirmed correct Sum and Carry functionality.
 
 ----------------------
+
+<img width="320" height="441" alt="image" src="https://github.com/user-attachments/assets/219ab179-ba32-4627-a142-d3a926323508" />
+
+
+<img width="320" height="441" alt="image" src="https://github.com/user-attachments/assets/01772487-6aea-4023-a9f7-f755a11ae572" />
+
+
+### ⚙️ 3. Logic Synthesis (Design Compiler)
+
+The RTL was synthesized using Synopsys Design Compiler. Technology mapping, area optimization, and timing checks were performed. A gate-level netlist, reports, and SDC files were generated.
+
+-------------------------
+
+### 🧱 4. Floorplanning (ICC)
+
+Core boundary, aspect ratio, and utilization were defined. IO placement and macro positioning (if any) were set. A clean layout structure was established for the physical flow.
+
+ ----------------------------
+ 

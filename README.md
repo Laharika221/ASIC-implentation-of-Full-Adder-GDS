@@ -15,3 +15,7 @@ module full_adder (
     assign cout = (a & b) | (b & cin) | (cin & a);
 endmodule
 ```
+### 🧪 2. Functional Simulation
+
+The RTL was simulated using a testbench that verified all 8 input combinations. Waveform and print outputs confirmed correct Sum and Carry functionality.
+----------------------

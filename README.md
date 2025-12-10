@@ -1,8 +1,9 @@
-##### 📘 Complete Full Adder – RTL to GDSII Flow Report
+### 📘 Complete Full Adder – RTL to GDSII Flow Report
+
 ### 🧩 1. RTL Design
 We began the flow by writing the Verilog RTL for a 1-bit Full Adder using basic logic equations. The design was kept simple and synthesizable for smooth downstream processing.
 Below is the code
-###
+'''
 module full_adder (
     input a, b, cin,
     output sum, cout
@@ -10,22 +11,31 @@ module full_adder (
     assign sum = a ^ b ^ cin;
     assign cout = (a & b) | (b & cin) | (cin & a);
 endmodule
-###
+'''
 ------------------------------------
-### 2. Functional Simulation
+
+2. Functional Simulation
 The RTL was simulated using a testbench that verified all 8 input combinations. Waveform and print outputs confirmed correct Sum and Carry functionality.
 ------------------------------
-### 4. Logic Synthesis (Design Compiler)
+4. Logic Synthesis (Design Compiler)
 The RTL was synthesized using Synopsys Design Compiler. Technology mapping, area optimization, and timing checks were performed. A gate-level netlist, reports, and SDC files were generated.
+
+
 <img width="603" height="357" alt="image" src="https://github.com/user-attachments/assets/7f0cce24-387c-455f-a974-8361b60f6a2c" />
+
 ----------------------------------
-### 🧱 4. Floorplanning (ICC)
+
+ 🧱 4. Floorplanning (ICC)
 Core boundary, aspect ratio, and utilization were defined. IO placement and macro positioning (if any) were set. A clean layout structure was established for the physical flow.
-### 🔌 5. Power Planning
-Power rings and power rails were inserted across the chip. VDD/VSS stripes were generated to ensure uniform IR drop and stable power delivery.
+-----------------------------------
+
+🔌 5. Power Planning
+    
+    Power rings and power rails were inserted across the chip. VDD/VSS stripes were generated to ensure uniform IR drop and stable power delivery.
 ---------------------------------------
-### 📍 6. Placement
-Standard cells were placed using ICC optimization. Placement ensured minimal wirelength, low congestion, and improved timing quality.
+**📍 6. Placement
+**
+   Standard cells were placed using ICC optimization. Placement ensured minimal wirelength, low congestion, and improved timing quality.
 ---------------------------------------
 ### 🕒 7.Clock Tree Synthesis (CTS)
 A balanced clock tree was inserted with buffers and inverters. Clock skew and insertion delay were optimized to meet timing constraints.

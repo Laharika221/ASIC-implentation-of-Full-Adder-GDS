@@ -6,7 +6,7 @@ We began the flow by writing the Verilog RTL for a 1-bit Full Adder using basic 
 
 below is the code :
 
-'''
+```
 module full_adder (
     input a, b, cin,
     output sum, cout
@@ -14,4 +14,4 @@ module full_adder (
     assign sum = a ^ b ^ cin;
     assign cout = (a & b) | (b & cin) | (cin & a);
 endmodule
-'''
+```

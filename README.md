@@ -23,6 +23,8 @@ The RTL was simulated using a testbench that verified all 8 input combinations. 
 
 <img width="320" height="441" alt="image" src="https://github.com/user-attachments/assets/219ab179-ba32-4627-a142-d3a926323508" />
 
+
+
 <img width="603" height="357" alt="image" src="https://github.com/user-attachments/assets/2a8bb63b-d4a1-4792-8195-e74020644eeb" />
 
 
